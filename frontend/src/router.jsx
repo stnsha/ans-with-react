@@ -3,6 +3,7 @@ import Login from './pages/Login';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Register from './pages/Register';
+import Bookings from './pages/cat_sitting/Bookings';
 import ProtectedLayout from './components/ProtectedLayout';
 import GuestLayout from './components/GuestLayout';
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
 			{
 				path: '/profile',
 				element: <Profile />,
+			},
+			{
+				path: '/CatSitting/Bookings',
+				element: <Bookings />,
 			},
 		],
 	},
