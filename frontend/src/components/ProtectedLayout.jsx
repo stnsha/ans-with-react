@@ -110,6 +110,17 @@ export default function DefaultLayout() {
 								</NavLink>
 							</li>
 							<li>
+								<NavLink
+									to="/Reference"
+									className={({ isActive }) =>
+										isActive
+											? 'block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white'
+											: 'block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 dark:text-gray-400 md:dark:hover:text-white'
+									}>
+									Reference
+								</NavLink>
+							</li>
+							<li>
 								<a
 									onClick={handleLogout}
 									href="#"
